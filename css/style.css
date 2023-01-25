@@ -1,0 +1,106 @@
+*{
+    background: #fafafa 0% 0% no-repeat padding-box;
+  }
+  .flex-container {
+    display: flex;
+    max-width: 1560px;
+    max-height: 720px;
+    margin: auto;
+    
+  }
+  
+  .logo-img {
+    position: relative;
+    margin: 72px 166px;
+    height: 556px;
+    width: 556px;
+    box-shadow: 0px 4px 31px #0000000a;
+    border: 20px solid #ffffff;
+    border-radius: 50%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 106px;
+  }
+  
+  .tagline {
+    margin-top: 20px;
+    height: 100px;
+    width: 500px;
+    font-size: 40px;
+    font-family: Roboto;
+    color: #3e3e3e;
+  }
+  
+  .tagline .expert {
+    font-family: Roboto;
+    color: #c8242f;
+    font-weight: 900;
+  }
+  
+  span.login {
+    /* width: 260px;
+      height: 33px; */
+    margin-top: 32px;
+    color: #3e3e3e;
+    font-size: 25px;
+    font-family: Roboto;
+  }
+  
+  form.login-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    width: 429px;
+  }
+  form.login-form input[type="text"]{
+    height: 49px;
+    width: 429px;
+    border: 1px solid #adadad;
+    padding-left: 14.5px;
+    font-family: Roboto;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  #password {
+    margin-top: 27px;
+  }
+  
+  .login-btn {
+    background-color: #c8242f;
+    border-radius: 23px;
+    width: 138px;
+    height: 45px;
+    font-size: 18px;
+    color: #ffffff;
+    border-color: #c8242f;
+    font-family: Roboto;
+  }
+  
+  form.login-form .submit {
+    margin-top: 30px;
+    display: flex;
+  }
+  form.login-form .submit .forgotpw {
+    font-family: Roboto;
+    font-size: 15px;
+    color: #adadad;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 12px;
+  }
+  
+  .register {
+    font-size: 15px;
+    font-family: Roboto;
+    margin-top: 24px;
+  }
+  .new-member {
+    color: #adadad;
+  }
+  
+  .new-register {
+    color: #c8242f;
+  }
+  
