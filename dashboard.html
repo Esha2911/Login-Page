@@ -2,27 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Dashboard Page</title>
+
+    
 </head>
 <body>
-    <div class="dashboard-container">
-        <div class="dashboard">
+    <div class="dashboard-main-container">
+        <div class="dashboard-container">
             <Header>
-                <div class="header-left">
-                    <img src="images/menu-bar.svg" alt="menu bar">
-                    <img src="images/logo.svg" alt="logo" class="logo">
+                <div class="flex-left">
+                    <input type="checkbox" id="check">
+                    <label for="check"><img src="images/menu-bar.svg" alt="menu bar" id="menu-bar"></label>
+                    <img src="images/logo.svg" alt="logo" class="logo" id="logo">
                 </div>
-                <div class="header-middle">
+                <div class="flex-right">
                     <div>
                     <img src="images/search-icon.svg" class="search">
                     <input type="text" placeholder="Search" class="search-txt">
                     </div>
-                    <div class="header-right">
+                    <div class="right-panel">
                     <img src="images/notification-icon.svg">
                     <img src="images/profile.png" class="profile">
                     <span class="profile-text">John Doe</span>
@@ -61,38 +63,38 @@
                         <span class="sidebar-item-text">Setting</span>
                     </div>
                 </div>
-                <div class="dashboard-content">
+                <div class="main-dashboard">
                     <div class="heading">Dashboard</div>
-                    <div class="flex-container_box">
-                        <div class="flex-item_box">
+                    <div class="product-list">
+                        <div class="product-item">
                             <img src="images/star.svg" class="icon">
                             <div class="details">
                                 <span class="num">23,456</span>
                                 <span>New Products</span>
                             </div>
                         </div>
-                        <div class="flex-item_box">
+                        <div class="product-item">
                             <img src="images/new-product.svg" class="icon">
                             <div class="details">
                                 <span class="num">2345</span>
                                 <span>Added Products</span>
                             </div>
                         </div>
-                        <div class="flex-item_box">
+                        <div class="product-item">
                             <img src="images/total-product.svg" class="icon">
                             <div class="details">
                                 <span class="num">32,456</span>
                                 <span>Total Products</span>
                             </div>
                         </div>
-                        <div class="flex-item_box">
+                        <div class="product-item">
                             <img src="images/dollar-filled.svg" class="icon">
                             <div class="details">
                                 <span class="num">5678</span>
-                                <span>Today's Sale</span>
+                                <span>Today’s Sale</span>
                             </div>
                         </div>
-                        <div class="flex-item_box">
+                        <div class="product-item">
                             <img src="images/money-bag.svg" class="icon">
                             <div class="details">
                                 <span class="num">33,5342</span>
@@ -226,6 +228,5 @@
                 </div>
             </section>
         </div>
-    </div>    
+    </div>
 </body>
-</html>
