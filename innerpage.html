@@ -15,7 +15,10 @@
     <div class="innerpage-container">
       <header>
         <div class="flex-left">
-          <img src="images/menu-bar.svg" alt="menu bar">
+          <input type="checkbox" id="check" />
+            <label for="check"
+              ><img src="images/menu-bar.svg" alt="menu bar" id="menu-bar"
+            /></label>
           <img src="images/logo.svg" alt="logo" class="logo">
         </div>
         <div class="flex-right">
@@ -24,7 +27,7 @@
             <input type="text" placeholder="Search" class="search-txt">
           </div>
           <div class="right-panel">
-            <img src="images/notification-icon.svg">
+            <img src="images/notification-icon.svg" id="notification">
             <img src="images/profile.png" class="profile">
             <span class="profile-text">John Doe</span>
             <img src="images/downward-arrow.svg" class="arrow">
@@ -67,7 +70,7 @@
           <div class="heading">Analysis</div>
           <div class="main-form">
             <!-- One Column -->
-            <div class="col-box">
+            <div class="container-fluid col-box">
               <span class="head-text">One Column</span>
               <div class="control">
                 <input class="txt-control" type="text" id="name" required>
@@ -76,7 +79,8 @@
               <div class="control">
                 <select class="dropdown-control" style="margin-top: 21px;">
                   <option>Dropdown</option>
-                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
                 </select>
               </div>
               <div class="control">
@@ -86,34 +90,35 @@
             </div>
 
             <!-- Two column -->
-            <div class="col-box">
+            <div class="container-fluid col-box">
               <span class="head-text">Two Column</span>
-              <div class="row"> 
-                <div class="col">
+              <div class="row gy-2"> 
+                <div class="col-12 col-sm-6">
                   <div class="control">
                     <input class="txt-control" type="text" id="name" required>
                     <label for="name">Name</label>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6">
                   <div class="control">
                     <input class="txt-control" type="text" id="uname" required>
                     <label for="uname">Username</label>
                   </div>
                 </div>
               </div>
-              <div class="row" style="margin-top: 21px">
-                <div class="col">
+              <div class="row gy-2" style="margin-top: 2px">
+                <div class="col-12 col-sm-6">
                   <div class="control">
                     <input class="txt-control" type="password" id="pass" required>
                     <label for="pass">Password</label>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 ">
                   <div class="control">
                     <select class="dropdown-control">
                       <option>Dropdown</option>
-                      <option></option>
+                      <option>1</option>
+                      <option>2</option>
                     </select>
                   </div>
                 </div>
@@ -121,22 +126,22 @@
             </div>
 
             <!-- Three Column -->
-            <div class="col-box">
+            <div class="container-fluid col-box">
               <span class="head-text">Three Column</span>
-              <div class="row">
-                <div class="col">
+              <div class="row gy-2">
+                <div class="col-12 col-sm-6 col-md-4  col-lg-4 col-xl-4">
                   <div class="control">
                     <input class="txt-control" type="text" id="focus" required>
                     <label for="focus">Focus</label>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-4  col-lg-4 col-xl-4">
                   <div class="control">
                     <input class="txt-control" type="password" id="pass1" required>
                     <label for="pass1">Password</label>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-12 col-md-4  col-lg-4 col-xl-4">
                   <div class="control">
                     <input class="disable-control" type="text" id="disable" name="disable" value="JohnDoe" disabled>
                     <label for="disable">Disabled</label>
@@ -146,10 +151,10 @@
             </div>
 
             <!-- Four Column -->
-            <div class="col-box">
+            <div class="container-fluid  col-box">
               <span class="head-text">Four Column</span>
-              <div class="row">
-                <div class="col">
+              <div class="row gy-2">
+                <div class="col-12 col-sm-6 col-md-4  col-lg-3 col-xl-3">
                   <div class="control">
                     <input class="validate-control" type="text" id="designation" name="designation" value="UI Designer"
                       required>
@@ -157,24 +162,25 @@
                     <span>Enter Valid data</span>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
                   <div class="control">
                     <input class="info-control" type="text" id="name" required>
                     <label for="name">Name</label>
                     <span>Enter your full Name as per ID</span>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
                   <div class="control">
                     <input class="txt-control" type="text" id="uname" name="uname" required value="JohnDoe">
                     <label for="uname">Username</label>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-12  col-lg-3 col-xl-3">
                   <div class="control">
                     <select class="dropdown-control">
                       <option>Select</option>
-                      <option></option>
+                      <option>1</option>
+                      <option>2</option>
                     </select>
                   </div>
                 </div>
@@ -206,37 +212,37 @@
               </div>
               <div class="inner-head-text" style="margin-top: 32px;">Checkbox</div>
               <div class="check-box">
-                <div class="check"><input type="checkbox" name="check" id="check1"  /><span
+                <div class="check"><input type="checkbox" name="check" id="check1" checked disabled /><span
                     class="check-name">Option 1</span></div>
                 <div class="check"><input type="checkbox" name="check" id="check2" /><span class="check-name">Option
                     2</span></div>
               </div>
 
-              <div class="inner-head-text" style="margin-top: 35px;">
+              <div class="inner-head-text" style="margin-top: 35px; margin-bottom: 25px;">
                 Snackbar
               </div>
-              <div class="row">
-                <div class="col">
+              <div class="row gy-2">
+                <div class="col-12 col-sm-12 col-md-6  col-lg-6 col-xl-6">
                   <div class="snackbar error">
                     <img src="images/error-icon.svg">
                       This is an error Message.
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-12 col-md-6  col-lg-6 col-xl-6">
                   <div class="snackbar info">
                     <img src="images/info-icon.svg">
                     This is an information message!
                   </div>
                 </div>
               </div>
-              <div class="row" style="margin-top: 25px;">
-                <div class="col">
+              <div class="row gy-2" style="margin-top: 2px;">
+                <div class="col-12 col-sm-12 col-md-6  col-lg-6 col-xl-6">
                   <div class="snackbar warning">
                     <img src="images/warning-icon.svg">
                       This is a warning message!
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-12 col-md-6  col-lg-6 col-xl-6">
                   <div class="snackbar success">
                     <img src="images/success-icon.svg">
                     This is a success message!
